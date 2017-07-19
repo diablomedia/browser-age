@@ -1,0 +1,19 @@
+{
+    "name": "diablomedia/browser-age",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jay Klehr",
+            "email": "jay@diablomedia.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "BrowserAge\\": "src/BrowserAge/"
+        }
+    }
+}
