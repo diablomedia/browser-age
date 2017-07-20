@@ -107,9 +107,9 @@ class Browser
                         'inclusive' => $this->version === $this->matchDepth($this->version, $found),
                     ],
                     'end' => [
-                        'date' => new DateTime($versions[$nextFound]),
-                        'version' => $nextFound,
-                        'inclusive' => $this->version === $this->matchDepth($this->version, $nextFound),
+                        'date' => !empty($nextfound) ? new DateTime($versions[$nextFound]) : null,
+                        'version' => !empty($nextfound) ? $nextFound : null,
+                        'inclusive' => !empty($nextfound) ?  ($this->version === $this->matchDepth($this->version, $nextFound)) : null,
                     ],
                 ];
             }
