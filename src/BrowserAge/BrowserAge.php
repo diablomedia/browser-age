@@ -45,6 +45,21 @@ class BrowserAge
             switch (strtolower($platform)) {
                 case 'windows':
                 case 'win':
+                case 'win32':
+                case 'win64':
+                case 'win31':
+                case 'win16':
+                case 'win95':
+                case 'win98':
+                case 'winme':
+                case 'winnt':
+                case 'win2000':
+                case 'winxp':
+                case 'winvista':
+                case 'win7':
+                case 'win8':
+                case 'win8.1':
+                case 'win10':
                     $platform = new Platform\Windows();
                     break;
                 case 'mac':
@@ -64,9 +79,14 @@ class BrowserAge
                 case 'ios':
                     $platform = new Platform\iOS();
                     break;
+                default:
+                    $platform = null;
+                    break;
             }
 
-            $this->setPlatform($platform, $platformVersion);
+            if ($platform !== null) {
+                $this->setPlatform($platform, $platformVersion);
+            }
         }
     }
 

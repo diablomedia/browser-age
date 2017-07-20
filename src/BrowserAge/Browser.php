@@ -74,7 +74,7 @@ class Browser
         } elseif ($found === '') {
             $age->releaseDateRange = [
                 'start' => [
-                    'date' => DateTime($versions[array_keys($versions)[count($versions) - 1]]),
+                    'date' => new DateTime($versions[array_keys($versions)[count($versions) - 1]]),
                     'version' => array_keys($versions)[count($versions) - 1],
                     'inclusive' => $this->version === $this->matchDepth($this->version, array_keys($versions)[count($versions) - 1]),
                 ],
