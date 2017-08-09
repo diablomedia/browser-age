@@ -132,7 +132,7 @@ class Safari extends Browser
                 '4.0.5' => '2010-06-21',
                 '5.0.2' => '2010-11-22',
                 // Wikipedia has no info for anything greater than 5.0.2
-                // These versions are based on a mixture of useragents and ios release history
+                // These versions are based on a mixture of useragents in our logs and ios release history
                 // iOS versions come from Wikipedia: https://en.wikipedia.org/wiki/IOS_version_history
                 // Assuming Safari 6.0 was released with iOS 6.0
                 '6.0' => '2012-09-19',

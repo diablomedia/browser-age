@@ -24,15 +24,31 @@ class BrowserAge
                 case 'firefox':
                     $browser = new Browser\Firefox();
                     break;
+                case 'firefox focus':
+                    $browser = new Browser\FirefoxFocus();
+                    break;
                 case 'edge':
                     $browser = new Browser\Edge();
                     break;
                 case 'internetexplorer':
+                case 'internet explorer':
                 case 'ie':
                     $browser = new Browser\InternetExplorer();
                     break;
                 case 'safari':
                     $browser = new Browser\Safari();
+                    break;
+                case 'opera':
+                case 'opera mobile':
+                    $browser = new Browser\Opera();
+                    break;
+                case 'opera mini':
+                    $browser = new Browser\OperaMini();
+                    break;
+                case 'samsung':
+                case 'samsung browser':
+                case 'samsung internet':
+                    $browser = new Browser\SamsungInternet();
                     break;
                 default:
                     throw new \Exception('Browser "' . $browser . '" is not supported.');

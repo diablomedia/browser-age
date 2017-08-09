@@ -2577,7 +2577,9 @@ class Chrome extends Browser
             ],
         ],
         'ios' => [
-            BrowserAge::STABILITY_BETA => [],
+            BrowserAge::STABILITY_BETA => [
+
+            ],
             BrowserAge::STABILITY_STABLE => [
                 '19.0.1084.60' => '2012-06-28',
                 '21.0.1180.77' => '2012-08-22',
@@ -2653,6 +2655,7 @@ class Chrome extends Browser
                 '59.0.3071.84' => '2017-06-06',
                 '59.0.3071.102' => '2017-06-15',
                 '60.0.3112.72' => '2017-07-25',
+                '60.0.3112.89' => '2017-08-07',
             ],
         ],
     ];
