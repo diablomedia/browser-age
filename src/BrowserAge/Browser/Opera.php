@@ -153,6 +153,10 @@ class Opera extends Browser
                 '43' => '2017-02-07',
                 '44' => '2017-03-21',
                 '45' => '2017-05-10',
+                // http://blogs.opera.com/desktop/2017/06/opera-46-goes-final-more-quality-and-operas-first-tv-ad/
+                '46' => '2017-06-22',
+                // http://blogs.opera.com/desktop/2017/08/exportable-bookmarks-smoother-videos-design-improvements-opera-47/
+                '47' => '2017-08-09',
             ],
         ],
         'android' => [

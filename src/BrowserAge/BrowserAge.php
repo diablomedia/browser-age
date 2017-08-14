@@ -28,6 +28,7 @@ class BrowserAge
                     $browser = new Browser\FirefoxFocus();
                     break;
                 case 'edge':
+                case 'edge mobile':
                     $browser = new Browser\Edge();
                     break;
                 case 'internetexplorer':
@@ -49,6 +50,9 @@ class BrowserAge
                 case 'samsung browser':
                 case 'samsung internet':
                     $browser = new Browser\SamsungInternet();
+                    break;
+                case 'uc browser':
+                    $browser = new Browser\UCBrowser();
                     break;
                 default:
                     throw new \Exception('Browser "' . $browser . '" is not supported.');
