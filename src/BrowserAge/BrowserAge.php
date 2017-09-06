@@ -51,6 +51,9 @@ class BrowserAge
                 case 'samsung internet':
                     $browser = new Browser\SamsungInternet();
                     break;
+                case 'seamonkey':
+                    $browser = new Browser\SeaMonkey();
+                    break;
                 case 'silk':
                     $browser = new Browser\Silk();
                     break;

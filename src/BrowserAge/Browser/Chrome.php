@@ -11,7 +11,7 @@ class Chrome extends Browser
      * These come from the Chrome Release blog (https://chromereleases.googleblog.com/)
      * except where noted.
      *
-     * Last updated on 2017-08-24
+     * Last updated on 2017-09-05
      */
     protected $versions = [
         'windows' => [
