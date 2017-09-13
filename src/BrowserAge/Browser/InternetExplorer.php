@@ -41,5 +41,28 @@ class InternetExplorer extends Browser
                 '5.0' => '2000-03-07',
             ],
         ],
+        'winphone' => [
+            BrowserAge::STABILITY_STABLE => [
+                // Released with Windows Mobile 6.5 according to this:
+                // https://en.wikipedia.org/wiki/Internet_Explorer_Mobile#Version_6
+                // This date is the Windows Mobile 6.5 release date from here:
+                // https://en.wikipedia.org/wiki/Windows_Mobile_6.5
+                '6.0' => '2009-05-11',
+                // Released with Windows Phone 7.0:
+                // https://en.wikipedia.org/wiki/Internet_Explorer_Mobile#Version_7
+                // Windows Phone 7.0 release date:
+                // https://en.wikipedia.org/wiki/Windows_Phone_7
+                '7.0' => '2010-10-21',
+                // Released as part of the Windows Phone 7.5 update
+                // https://en.wikipedia.org/wiki/Windows_Phone_version_history#Windows_Phone_7.5
+                '9.0' => '2011-09-27',
+                // Released with Windows Phone 8:
+                // https://en.wikipedia.org/wiki/Internet_Explorer_Mobile#Version_10
+                // https://en.wikipedia.org/wiki/Windows_Phone_8
+                '10.0' => '2012-10-29',
+                // https://en.wikipedia.org/wiki/Internet_Explorer_Mobile#Version_11
+                '11.0' => '2014-07-15',
+            ]
+        ]
     ];
 }

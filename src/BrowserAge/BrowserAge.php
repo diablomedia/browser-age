@@ -34,6 +34,7 @@ class BrowserAge
                 case 'internetexplorer':
                 case 'internet explorer':
                 case 'ie':
+                case 'iemobile':
                     $browser = new Browser\InternetExplorer();
                     break;
                 case 'safari':
@@ -87,6 +88,16 @@ class BrowserAge
                 case 'win8.1':
                 case 'win10':
                     $platform = new Platform\Windows();
+                    break;
+                case 'winphone':
+                case 'winmobile':
+                case 'winphone8.1':
+                case 'winphone8':
+                case 'winphone7.5':
+                case 'winphone':
+                case 'winphone7':
+                case 'winphone6':
+                    $platform = new Platform\WinPhone();
                     break;
                 case 'mac':
                 case 'osx':
