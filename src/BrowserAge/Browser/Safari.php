@@ -122,6 +122,9 @@ class Safari extends Browser
                 '10.0.2' => '2016-12-13',
                 '10.0.3' => '2017-01-23',
                 '10.1' => '2017-03-27',
+                '10.1.1' => '2017-05-15',
+                '10.1.2' => '2017-07-19',
+                '11.0' => '2017-09-19',
             ],
         ],
         'ios' => [
@@ -144,6 +147,8 @@ class Safari extends Browser
                 '9.0' => '2015-09-16',
                 // Assuming Safari 10.0 was released with iOS 10.0
                 '10.0' => '2016-09-16',
+                // Assuming Safari 11.0 was released with iOS 11.0
+                '11.0' => '2017-09-19',
             ],
         ],
         'windows' => [
