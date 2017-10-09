@@ -58,6 +58,9 @@ class BrowserAge
                 case 'silk':
                     $browser = new Browser\Silk();
                     break;
+                case 'yandex browser':
+                    $browser = new Browser\YandexBrowser();
+                    break;
                 case 'uc browser':
                     $browser = new Browser\UCBrowser();
                     break;

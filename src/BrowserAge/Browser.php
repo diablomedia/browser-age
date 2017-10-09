@@ -54,64 +54,67 @@ class Browser
         $this->minimumStability = $stability;
         $versions = $this->getVersions();
 
-        $found = $this->findNearestVersion($this->version, array_keys($versions));
-
         $age = new AgeResult();
 
-        if ($found === array_keys($versions)[0]) {
-            $age->releaseDateRange = [
-                'start' => [
-                    'date' => null,
-                    'version' => null,
-                    'inclusive' => false,
-                ],
-                'end' => [
-                    'date' => new DateTime($versions[$found]),
-                    'version' => $found,
-                    'inclusive' => $this->version === $this->matchDepth($this->version, $found),
-                ],
-            ];
-        } elseif ($found === '') {
-            $age->releaseDateRange = [
-                'start' => [
-                    'date' => new DateTime($versions[array_keys($versions)[count($versions) - 1]]),
-                    'version' => array_keys($versions)[count($versions) - 1],
-                    'inclusive' => $this->version === $this->matchDepth($this->version, array_keys($versions)[count($versions) - 1]),
-                ],
-                'end' => [
-                    'date' => null,
-                    'version' => null,
-                    'inclusive' => false,
-                ],
-            ];
-        } else {
-            $nextFound = $this->findNearestVersion($this->incrementVersion($this->version), array_keys($versions));
-            if ($nextFound === $found) {
+        if (!empty($versions)) {
+
+            $found = $this->findNearestVersion($this->version, array_keys($versions));
+
+            if ($found === array_keys($versions)[0]) {
                 $age->releaseDateRange = [
                     'start' => [
-                        'date' => new DateTime($versions[array_keys($versions)[array_search($found, array_keys($versions)) - 1]]),
-                        'version' => array_keys($versions)[array_search($found, array_keys($versions)) - 1],
-                        'inclusive' => $this->version === $this->matchDepth($this->version, array_keys($versions)[array_search($found, array_keys($versions)) - 1]),
+                        'date' => null,
+                        'version' => null,
+                        'inclusive' => false,
                     ],
                     'end' => [
                         'date' => new DateTime($versions[$found]),
                         'version' => $found,
                         'inclusive' => $this->version === $this->matchDepth($this->version, $found),
+                    ],
+                ];
+            } elseif ($found === '') {
+                $age->releaseDateRange = [
+                    'start' => [
+                        'date' => new DateTime($versions[array_keys($versions)[count($versions) - 1]]),
+                        'version' => array_keys($versions)[count($versions) - 1],
+                        'inclusive' => $this->version === $this->matchDepth($this->version, array_keys($versions)[count($versions) - 1]),
+                    ],
+                    'end' => [
+                        'date' => null,
+                        'version' => null,
+                        'inclusive' => false,
                     ],
                 ];
             } else {
-                $age->releaseDateRange = [
-                    'start' => [
-                        'date' => new DateTime($versions[$found]),
-                        'version' => $found,
-                        'inclusive' => $this->version === $this->matchDepth($this->version, $found),
-                    ],
-                    'end' => [
-                        'date' => !empty($nextfound) ? new DateTime($versions[$nextFound]) : null,
-                        'version' => !empty($nextfound) ? $nextFound : null,
-                        'inclusive' => !empty($nextfound) ?  ($this->version === $this->matchDepth($this->version, $nextFound)) : null,
-                    ],
-                ];
+                $nextFound = $this->findNearestVersion($this->incrementVersion($this->version), array_keys($versions));
+                if ($nextFound === $found) {
+                    $age->releaseDateRange = [
+                        'start' => [
+                            'date' => new DateTime($versions[array_keys($versions)[array_search($found, array_keys($versions)) - 1]]),
+                            'version' => array_keys($versions)[array_search($found, array_keys($versions)) - 1],
+                            'inclusive' => $this->version === $this->matchDepth($this->version, array_keys($versions)[array_search($found, array_keys($versions)) - 1]),
+                        ],
+                        'end' => [
+                            'date' => new DateTime($versions[$found]),
+                            'version' => $found,
+                            'inclusive' => $this->version === $this->matchDepth($this->version, $found),
+                        ],
+                    ];
+                } else {
+                    $age->releaseDateRange = [
+                        'start' => [
+                            'date' => new DateTime($versions[$found]),
+                            'version' => $found,
+                            'inclusive' => $this->version === $this->matchDepth($this->version, $found),
+                        ],
+                        'end' => [
+                            'date' => !empty($nextfound) ? new DateTime($versions[$nextFound]) : null,
+                            'version' => !empty($nextfound) ? $nextFound : null,
+                            'inclusive' => !empty($nextfound) ?  ($this->version === $this->matchDepth($this->version, $nextFound)) : null,
+                        ],
+                    ];
+                }
             }
         }
 
@@ -122,9 +125,9 @@ class Browser
     {
         $usedVersions = [];
 
-        if ($this->platform && isset($this->versions[$this->platform])) {
-            $onlyPlatform = $this->platform;
-        } else {
+        $onlyPlatform = $this->platform;
+
+        if (!$this->platform) {
             $onlyPlatform = 'all';
         }
 
