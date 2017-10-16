@@ -11,7 +11,7 @@ class Chrome extends Browser
      * These come from the Chrome Release blog (https://chromereleases.googleblog.com/)
      * except where noted.
      *
-     * Last updated on 2017-10-06
+     * Last updated on 2017-10-15
      */
     protected $versions = [
         'windows' => [
@@ -461,6 +461,7 @@ class Chrome extends Browser
                 '62.0.3202.29' => '2017-09-20',
                 '62.0.3202.38' => '2017-09-27',
                 '62.0.3202.45' => '2017-10-04',
+                '62.0.3202.52' => '2017-10-11',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '1.0.154.36' => '2008-12-11',
@@ -1127,6 +1128,7 @@ class Chrome extends Browser
                 '62.0.3202.29' => '2017-09-20',
                 '62.0.3202.38' => '2017-09-27',
                 '62.0.3202.45' => '2017-10-04',
+                '62.0.3202.52' => '2017-10-11',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '5.0.375.55' => '2010-05-25',
@@ -1765,6 +1767,7 @@ class Chrome extends Browser
                 '62.0.3202.29' => '2017-09-20',
                 '62.0.3202.38' => '2017-09-27',
                 '62.0.3202.45' => '2017-10-04',
+                '62.0.3202.52' => '2017-10-11',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '5.0.375.55' => '2010-05-25',
@@ -2293,6 +2296,7 @@ class Chrome extends Browser
                 '61.0.3163.110' => '2017-10-02',
                 '61.0.3163.113' => '2017-10-04',
                 '61.0.3163.117' => '2017-10-06',
+                '62.0.3202.43' => '2017-10-10',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '8.0.552.343' => '2010-12-13',
@@ -2442,6 +2446,7 @@ class Chrome extends Browser
                 '60.0.3112.112' => '2017-08-24',
                 '60.0.3112.114' => '2017-09-14',
                 '61.0.3163.113' => '2017-10-05',
+                '61.0.3163.120' => '2017-10-10',
             ],
         ],
         'android' => [
