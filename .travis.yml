@@ -1,0 +1,9 @@
+language: php
+
+php:
+  - '7.0'
+  - '7.1'
+  - nightly
+
+before_script:
+  - '! find . -type f -name "*.php" -exec php -d error_reporting=32767 -l {} \; 2>&1 >&- | grep "^"'
