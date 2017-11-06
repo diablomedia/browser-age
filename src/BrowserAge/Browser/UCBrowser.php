@@ -64,6 +64,8 @@ class UCBrowser extends Browser
                 '11.3.8.976' => '2017-06-29',
                 '11.4.2.995' => '2017-08-18',
                 '11.4.5.1005' => '2017-09-18',
+                '11.4.6.1017' => '2017-09-26',
+                '11.4.8.1012' => '2017-10-18',
             ],
         ],
         // These are from the Version History in the app store (not web accessible)

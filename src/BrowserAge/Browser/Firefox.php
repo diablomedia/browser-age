@@ -259,6 +259,10 @@ class Firefox extends Browser
                 '55.0.3' => '2017-08-25',
                 // https://www.mozilla.org/en-US/firefox/56.0/releasenotes/
                 '56.0' => '2017-09-28',
+                // https://www.mozilla.org/en-US/firefox/56.0.1/releasenotes/
+                '56.0.1' => '2017-10-09',
+                // https://www.mozilla.org/en-US/firefox/56.0.2/releasenotes/
+                '56.0.2' => '2017-10-26',
             ],
         ],
         'android' => [
@@ -409,6 +413,7 @@ class Firefox extends Browser
                 '9.0' => '2017-09-19',
                 '9.1' => '2017-09-28',
                 '9.2' => '2017-10-11',
+                '9.3' => '2017-10-26',
             ],
         ]
     ];

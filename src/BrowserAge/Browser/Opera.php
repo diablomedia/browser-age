@@ -157,6 +157,8 @@ class Opera extends Browser
                 '46' => '2017-06-22',
                 // http://blogs.opera.com/desktop/2017/08/exportable-bookmarks-smoother-videos-design-improvements-opera-47/
                 '47' => '2017-08-09',
+                // http://blogs.opera.com/desktop/2017/09/convert-measurements-currencies-time-zones-opera-48/
+                '48' => '2017-09-27',
             ],
         ],
         'android' => [
@@ -197,6 +199,7 @@ class Opera extends Browser
                 '42.5.2246.114172' => '2017-03-08',
                 '42.6.2246.114522' => '2017-03-17',
                 '42.7.2246.114996' => '2017-03-28',
+                '43.0.2246.121183' => '2017-09-27',
             ],
         ],
     ];

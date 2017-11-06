@@ -34,6 +34,8 @@ class SamsungInternet extends Browser
                 '5.2' => '2017-03-03',
                 // https://medium.com/samsung-internet-dev/announcing-samsung-internet-v5-4-stable-fd941e0dcd58
                 '5.4' => '2017-05-17',
+                // https://medium.com/samsung-internet-dev/samsung-internet-v6-2-now-stable-ab7f95ed8b4b
+                '6.2' => '2017-10-30',
             ],
         ],
     ];
