@@ -263,6 +263,8 @@ class Firefox extends Browser
                 '56.0.1' => '2017-10-09',
                 // https://www.mozilla.org/en-US/firefox/56.0.2/releasenotes/
                 '56.0.2' => '2017-10-26',
+                // https://www.mozilla.org/en-US/firefox/57.0/releasenotes/
+                '57.0' => '2017-11-14',
             ],
         ],
         'android' => [
@@ -377,6 +379,8 @@ class Firefox extends Browser
                 '55.0.2' => '2017-08-16',
                 // https://www.mozilla.org/en-US/firefox/android/56.0/releasenotes/
                 '56.0' => '2017-09-28',
+                // https://www.mozilla.org/en-US/firefox/android/57.0/releasenotes/
+                '57.0' => '2017-11-14',
             ],
         ],
         // These come from the App Store version history (not web accessible)
@@ -414,6 +418,9 @@ class Firefox extends Browser
                 '9.1' => '2017-09-28',
                 '9.2' => '2017-10-11',
                 '9.3' => '2017-10-26',
+                '10.0' => '2017-11-08',
+                '10.1' => '2017-11-10',
+                '10.2' => '2017-11-16',
             ],
         ]
     ];
