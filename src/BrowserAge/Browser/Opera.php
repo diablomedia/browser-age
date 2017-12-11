@@ -159,6 +159,7 @@ class Opera extends Browser
                 '47' => '2017-08-09',
                 // http://blogs.opera.com/desktop/2017/09/convert-measurements-currencies-time-zones-opera-48/
                 '48' => '2017-09-27',
+                '49' => '2017-11-08',
             ],
         ],
         'android' => [

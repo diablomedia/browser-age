@@ -67,5 +67,23 @@ class Edge extends Browser
                 '16.16299' => '2017-09-26',
             ],
         ],
+        'ios' => [
+            // History comes from Apple Store (not web accessible)
+            BrowserAge::STABILITY_STABLE => [
+                '41.4' => '2017-11-30',
+            ],
+        ],
+        'android' => [
+            // History here comes from our logs, the google play store doesn't list the same
+            // version numbers as what's reported in the UA
+            BrowserAge::STABILITY_STABLE => [
+                '41.0.0.1136' => '2017-11-09',
+                '41.0.0.1138' => '2017-11-16',
+                '41.0.0.1172' => '2017-11-24',
+                '41.0.0.1265' => '2017-11-28',
+                '41.0.0.1267' => '2017-11-29',
+                '41.0.0.1270' => '2017-12-05',
+            ],
+        ],
     ];
 }
