@@ -71,6 +71,7 @@ class Edge extends Browser
             // History comes from Apple Store (not web accessible)
             BrowserAge::STABILITY_STABLE => [
                 '41.4' => '2017-11-30',
+                '41.6' => '2017-12-13',
             ],
         ],
         'android' => [
