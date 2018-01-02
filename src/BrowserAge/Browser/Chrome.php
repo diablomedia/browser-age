@@ -11,7 +11,7 @@ class Chrome extends Browser
      * These come from the Chrome Release blog (https://chromereleases.googleblog.com/)
      * except where noted.
      *
-     * Last updated on 2017-12-10
+     * Last updated on 2018-01-01
      */
     protected $versions = [
         'windows' => [
@@ -471,6 +471,7 @@ class Chrome extends Browser
                 '63.0.3239.70' => '2017-11-29',
                 '63.0.3239.84' => '2017-12-06',
                 '64.0.3282.24' => '2017-12-14',
+                '64.0.3282.39' => '2017-12-20',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '1.0.154.36' => '2008-12-11',
@@ -1153,6 +1154,7 @@ class Chrome extends Browser
                 '63.0.3239.70' => '2017-11-29',
                 '63.0.3239.84' => '2017-12-06',
                 '64.0.3282.24' => '2017-12-14',
+                '64.0.3282.39' => '2017-12-20',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '5.0.375.55' => '2010-05-25',
@@ -1807,6 +1809,7 @@ class Chrome extends Browser
                 '63.0.3239.70' => '2017-11-29',
                 '63.0.3239.84' => '2017-12-06',
                 '64.0.3282.24' => '2017-12-14',
+                '64.0.3282.39' => '2017-12-20',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '5.0.375.55' => '2010-05-25',
@@ -2347,6 +2350,7 @@ class Chrome extends Browser
                 '63.0.3239.50' => '2017-11-16',
                 '63.0.3239.70' => '2017-11-29',
                 '64.0.3282.24' => '2017-12-14',
+                '64.0.3282.41' => '2017-12-20',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '8.0.552.343' => '2010-12-13',
@@ -2628,6 +2632,7 @@ class Chrome extends Browser
                 '63.0.3239.53' => '2017-11-16',
                 '63.0.3239.60' => '2017-11-21',
                 '63.0.3239.71' => '2017-11-29',
+                '64.0.3282.29' => '2017-12-18',
             ],
             BrowserAge::STABILITY_STABLE => [
                 '18.0.1025.123' => '2012-06-27', // 18.0.1025123
