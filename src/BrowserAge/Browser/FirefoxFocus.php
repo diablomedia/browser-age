@@ -55,6 +55,12 @@ class FirefoxFocus extends Browser
                 '2.2' => '2017-10-19',
                 // https://web.archive.org/web/20171120184447/https://play.google.com/store/apps/details?id=org.mozilla.focus&hl=en
                 '2.3' => '2017-11-17',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/v2.4
+                '2.4' => '2017-11-27',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/v2.5
+                '2.5' => '2017-11-27',
+                // https://web.archive.org/web/20180108175925/https://play.google.com/store/apps/details?id=org.mozilla.focus&hl=en
+                '4.0.1' => '2017-12-19',
             ],
         ],
     ];
