@@ -72,6 +72,7 @@ class Edge extends Browser
             BrowserAge::STABILITY_STABLE => [
                 '41.4' => '2017-11-30',
                 '41.6' => '2017-12-13',
+                '41.8' => '2018-01-10',
             ],
         ],
         'android' => [
