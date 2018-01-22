@@ -160,6 +160,8 @@ class Opera extends Browser
                 // http://blogs.opera.com/desktop/2017/09/convert-measurements-currencies-time-zones-opera-48/
                 '48' => '2017-09-27',
                 '49' => '2017-11-08',
+                // https://blogs.opera.com/desktop/2018/01/opera-50-introduces-anti-bitcoin-mining-tool/
+                '50' => '2018-01-04',
             ],
         ],
         'android' => [
