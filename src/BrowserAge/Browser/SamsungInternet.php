@@ -36,6 +36,12 @@ class SamsungInternet extends Browser
                 '5.4' => '2017-05-17',
                 // https://medium.com/samsung-internet-dev/samsung-internet-v6-2-now-stable-ab7f95ed8b4b
                 '6.2' => '2017-10-30',
+                // https://medium.com/samsung-internet-dev/lets-connect-with-samsung-internet-v6-4-stable-1f197d43a812
+                '6.4' => '2018-02-19',
+                // https://medium.com/samsung-internet-dev/new-samsung-internet-beta-introduces-protected-browsing-52f1ce7145f6
+                '7.2' => '2018-03-08',
+                // https://medium.com/samsung-internet-dev/samsung-internet-v7-4-beta-is-here-bdbc9be9f102
+                '7.4' => '2018-06-05',
             ],
         ],
     ];

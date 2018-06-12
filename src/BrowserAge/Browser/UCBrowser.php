@@ -67,6 +67,12 @@ class UCBrowser extends Browser
                 '11.4.6.1017' => '2017-09-26',
                 '11.4.8.1012' => '2017-10-18',
                 '11.5.0.1015' => '2017-12-08',
+                '12.0.0.1088' => '2018-01-29',
+                '12.2.0.1089' => '2018-03-06',
+                '12.2.1.1108' => '2018-03-26',
+                '12.2.5.1102' => '2018-04-01', // guessed on the date here since it wasn't listed at apk4fun
+                '12.5.0.1109' => '2018-05-03',
+                '12.5.5.1111' => '2018-05-24',
             ],
         ],
         // These are from the Version History in the app store (not web accessible)

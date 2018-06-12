@@ -279,6 +279,20 @@ class Firefox extends Browser
                 '58.0.1' => '2018-01-29',
                 // https://www.mozilla.org/en-US/firefox/58.0.2/releasenotes/
                 '58.0.2' => '2018-02-07',
+                // https://www.mozilla.org/en-US/firefox/59.0/releasenotes/
+                '59.0' => '2018-03-13',
+                // https://www.mozilla.org/en-US/firefox/59.0.1/releasenotes/
+                '59.0.1' => '2018-03-16',
+                // https://www.mozilla.org/en-US/firefox/59.0.2/releasenotes/
+                '59.0.2' => '2018-03-26',
+                // https://www.mozilla.org/en-US/firefox/59.0.3/releasenotes/
+                '59.0.3' => '2018-04-30',
+                // https://www.mozilla.org/en-US/firefox/60.0/releasenotes/
+                '60.0' => '2018-05-09',
+                // https://www.mozilla.org/en-US/firefox/60.0.1/releasenotes/
+                '60.0.1' => '2018-05-16',
+                // https://www.mozilla.org/en-US/firefox/60.0.2/releasenotes/
+                '60.0.2' => '2018-06-06',
             ],
         ],
         'android' => [
@@ -403,6 +417,10 @@ class Firefox extends Browser
                 '58.0.1' => '2018-01-29',
                 // https://www.mozilla.org/en-US/firefox/android/58.0.2/releasenotes/
                 '58.0.2' => '2018-02-07',
+                // https://www.mozilla.org/en-US/firefox/android/59.0.2/releasenotes/
+                '59.0.2' => '2018-03-26',
+                // https://www.mozilla.org/en-US/firefox/android/60.0.2/releasenotes/
+                '60.0.2' => '2018-06-06',
             ],
         ],
         // These come from the App Store version history (not web accessible)
@@ -447,6 +465,10 @@ class Firefox extends Browser
                 '10.4' => '2017-12-14',
                 '10.5' => '2018-02-01',
                 '10.6' => '2018-02-02',
+                '11.0' => '2018-04-04',
+                '11.1' => '2018-04-26',
+                '12.0' => '2018-05-29',
+                '12.1' => '2018-06-07',
             ],
         ]
     ];
