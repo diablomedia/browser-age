@@ -35,6 +35,8 @@ class FirefoxFocus extends Browser
                 '4.0' => '2017-12-10',
                 '4.0.1' => '2017-12-10',
                 '4.0.2' => '2018-01-17',
+                '4.0.3' => '2018-02-17',
+                '4.1' => '2018-05-29',
             ],
         ],
         'android' => [
@@ -62,6 +64,12 @@ class FirefoxFocus extends Browser
                 '2.5' => '2017-11-27',
                 // https://web.archive.org/web/20180108175925/https://play.google.com/store/apps/details?id=org.mozilla.focus&hl=en
                 '4.0.1' => '2017-12-19',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/v4.0.2-RC1
+                '4.0.2' => '2018-01-11',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/V4.1
+                '4.1' => '2018-03-22',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/v4.2
+                '4.2' => '2018-04-18',
             ],
         ],
     ];

@@ -162,6 +162,10 @@ class Opera extends Browser
                 '49' => '2017-11-08',
                 // https://blogs.opera.com/desktop/2018/01/opera-50-introduces-anti-bitcoin-mining-tool/
                 '50' => '2018-01-04',
+                // https://www.opera.com/docs/history/
+                '51' => '2018-02-07',
+                '52' => '2018-03-22',
+                '53' => '2018-05-10',
             ],
         ],
         'android' => [
@@ -204,6 +208,9 @@ class Opera extends Browser
                 '42.7.2246.114996' => '2017-03-28',
                 '43.0.2246.121183' => '2017-09-27',
                 '44.1.2246.123029' => '2017-12-11',
+                '45.0.2246.125120' => '2018-02-12',
+                '45.1.2246.125351' => '2018-03-31', // guesstimate, no date specified
+                '46.3.2246.127744' => '2018-05-22',
             ],
         ],
     ];
