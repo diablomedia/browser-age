@@ -9,6 +9,12 @@ class SamsungInternet extends Browser
 {
     protected $versions = [
         'android' => [
+            BrowserAge::STABILITY_BETA => [
+                // https://medium.com/samsung-internet-dev/new-samsung-internet-beta-introduces-protected-browsing-52f1ce7145f6
+                '7.2' => '2018-03-08',
+                // https://medium.com/samsung-internet-dev/samsung-internet-v7-4-beta-is-here-bdbc9be9f102
+                '7.4' => '2018-06-05',
+            ],
             BrowserAge::STABILITY_STABLE => [
                 // Based on first sighting in our logs
                 //'1.0' => '',
@@ -38,10 +44,8 @@ class SamsungInternet extends Browser
                 '6.2' => '2017-10-30',
                 // https://medium.com/samsung-internet-dev/lets-connect-with-samsung-internet-v6-4-stable-1f197d43a812
                 '6.4' => '2018-02-19',
-                // https://medium.com/samsung-internet-dev/new-samsung-internet-beta-introduces-protected-browsing-52f1ce7145f6
-                '7.2' => '2018-03-08',
-                // https://medium.com/samsung-internet-dev/samsung-internet-v7-4-beta-is-here-bdbc9be9f102
-                '7.4' => '2018-06-05',
+                // https://medium.com/samsung-internet-dev/7-2-stable-is-here-81fdbfca75b4
+                '7.2' => '2018-06-20',
             ],
         ],
     ];
