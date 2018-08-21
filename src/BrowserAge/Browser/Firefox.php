@@ -249,50 +249,32 @@ class Firefox extends Browser
                 '53.0.3' => '2017-05-19',
                 '54.0' => '2017-06-13',
                 '54.0.1' => '2017-06-29',
-                // https://www.mozilla.org/en-US/firefox/55.0/releasenotes/
+                // All below come from https://www.mozilla.org/en-US/firefox/releases/
                 '55.0' => '2017-08-08',
-                // https://www.mozilla.org/en-US/firefox/55.0.1/releasenotes/
                 '55.0.1' => '2017-08-10',
-                // https://www.mozilla.org/en-US/firefox/55.0.2/releasenotes/
                 '55.0.2' => '2017-08-16',
-                // https://www.mozilla.org/en-US/firefox/55.0.3/releasenotes/
                 '55.0.3' => '2017-08-25',
-                // https://www.mozilla.org/en-US/firefox/56.0/releasenotes/
                 '56.0' => '2017-09-28',
-                // https://www.mozilla.org/en-US/firefox/56.0.1/releasenotes/
                 '56.0.1' => '2017-10-09',
-                // https://www.mozilla.org/en-US/firefox/56.0.2/releasenotes/
                 '56.0.2' => '2017-10-26',
-                // https://www.mozilla.org/en-US/firefox/57.0/releasenotes/
                 '57.0' => '2017-11-14',
-                // https://www.mozilla.org/en-US/firefox/57.0.1/releasenotes/
                 '57.0.1' => '2017-11-29',
-                // https://www.mozilla.org/en-US/firefox/57.0.2/releasenotes/
                 '57.0.2' => '2017-12-07',
-                // https://www.mozilla.org/en-US/firefox/57.0.3/releasenotes/
                 '57.0.3' => '2017-12-28',
-                // https://www.mozilla.org/en-US/firefox/57.0.4/releasenotes/
                 '57.0.4' => '2018-01-04',
-                // https://www.mozilla.org/en-US/firefox/58.0/releasenotes/
                 '58.0' => '2018-01-23',
-                // https://www.mozilla.org/en-US/firefox/58.0.1/releasenotes/
                 '58.0.1' => '2018-01-29',
-                // https://www.mozilla.org/en-US/firefox/58.0.2/releasenotes/
                 '58.0.2' => '2018-02-07',
-                // https://www.mozilla.org/en-US/firefox/59.0/releasenotes/
                 '59.0' => '2018-03-13',
-                // https://www.mozilla.org/en-US/firefox/59.0.1/releasenotes/
                 '59.0.1' => '2018-03-16',
-                // https://www.mozilla.org/en-US/firefox/59.0.2/releasenotes/
                 '59.0.2' => '2018-03-26',
-                // https://www.mozilla.org/en-US/firefox/59.0.3/releasenotes/
                 '59.0.3' => '2018-04-30',
-                // https://www.mozilla.org/en-US/firefox/60.0/releasenotes/
                 '60.0' => '2018-05-09',
-                // https://www.mozilla.org/en-US/firefox/60.0.1/releasenotes/
                 '60.0.1' => '2018-05-16',
-                // https://www.mozilla.org/en-US/firefox/60.0.2/releasenotes/
                 '60.0.2' => '2018-06-06',
+                '61.0' => '2018-06-26',
+                '61.0.1' => '2018-07-05',
+                '61.0.2' => '2018-08-08',
             ],
         ],
         'android' => [
@@ -403,24 +385,17 @@ class Firefox extends Browser
                 '53.0.3' => '2017-05-19',
                 '54.0' => '2017-06-13',
                 '54.0.1' => '2017-06-29',
-                // https://www.mozilla.org/en-US/firefox/android/55.0.2/releasenotes/
+                // All below come from https://www.mozilla.org/en-US/firefox/releases/
                 '55.0.2' => '2017-08-16',
-                // https://www.mozilla.org/en-US/firefox/android/56.0/releasenotes/
                 '56.0' => '2017-09-28',
-                // https://www.mozilla.org/en-US/firefox/android/57.0/releasenotes/
                 '57.0' => '2017-11-14',
-                // https://www.mozilla.org/en-US/firefox/android/57.0.1/releasenotes/
                 '57.0.1' => '2017-11-29',
-                // https://www.mozilla.org/en-US/firefox/android/57.0.4/releasenotes/
                 '57.0.4' => '2018-01-04',
-                // https://www.mozilla.org/en-US/firefox/android/58.0.1/releasenotes/
                 '58.0.1' => '2018-01-29',
-                // https://www.mozilla.org/en-US/firefox/android/58.0.2/releasenotes/
                 '58.0.2' => '2018-02-07',
-                // https://www.mozilla.org/en-US/firefox/android/59.0.2/releasenotes/
                 '59.0.2' => '2018-03-26',
-                // https://www.mozilla.org/en-US/firefox/android/60.0.2/releasenotes/
                 '60.0.2' => '2018-06-06',
+                '61.0.2' => '2018-08-08',
             ],
         ],
         // These come from the App Store version history (not web accessible)
@@ -447,6 +422,7 @@ class Firefox extends Browser
                 '7.2' => '2017-04-16',
                 '7.3' => '2017-04-21',
                 '7.4' => '2017-04-29',
+                // https://itunes.apple.com/us/app/firefox-web-browser/id989804926?mt=8
                 '7.5' => '2017-05-16',
                 '8.0' => '2017-07-20',
                 '8.0.1' => '2017-07-21',
@@ -469,6 +445,9 @@ class Firefox extends Browser
                 '11.1' => '2018-04-26',
                 '12.0' => '2018-05-29',
                 '12.1' => '2018-06-07',
+                '12.2' => '2018-07-25',
+                '13.0' => '2018-08-09',
+                '13.1' => '2018-08-17',
             ],
         ]
     ];

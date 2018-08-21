@@ -15,6 +15,7 @@ class FirefoxFocus extends Browser
                 '1.1' => '2016-09-12',
                 '2.0' => '2016-11-17',
                 '2.0.1' => '2016-11-29',
+                // https://itunes.apple.com/us/app/firefox-focus-privacy-browser/id1055677337?mt=8
                 '3.0' => '2017-01-26',
                 '3.0.1' => '2017-01-30',
                 '3.1' => '2017-03-08',
@@ -37,6 +38,9 @@ class FirefoxFocus extends Browser
                 '4.0.2' => '2018-01-17',
                 '4.0.3' => '2018-02-17',
                 '4.1' => '2018-05-29',
+                '6.0' => '2018-07-10',
+                '6.1' => '2018-07-25',
+                '6.1.1' => '2018-07-31',
             ],
         ],
         'android' => [
@@ -70,6 +74,14 @@ class FirefoxFocus extends Browser
                 '4.1' => '2018-03-22',
                 // https://github.com/mozilla-mobile/focus-android/releases/tag/v4.2
                 '4.2' => '2018-04-18',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/v5.0
+                '5.0' => '2018-05-14',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/v5.2-RC3
+                '5.2' => '2018-06-22',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/V6.0-RC5
+                '6.0' => '2018-07-05',
+                // https://github.com/mozilla-mobile/focus-android/releases/tag/v6.1.1-RC3
+                '6.1.1' => '2018-08-08',
             ],
         ],
     ];
