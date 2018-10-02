@@ -27,7 +27,7 @@ class Browser
     {
         foreach ($versions as $versionCheck) {
             $originalVersionCheck = $versionCheck;
-            $versionCheck = $this->matchDepth($version, $versionCheck);
+            $versionCheck         = $this->matchDepth($version, $versionCheck);
             if (version_compare($versionCheck, $version) >= 0) {
                 return $originalVersionCheck;
             }
@@ -52,66 +52,66 @@ class Browser
         }
 
         $this->minimumStability = $stability;
-        $versions = $this->getVersions();
+        $versions               = $this->getVersions();
 
         $age = new AgeResult();
 
         if (!empty($versions)) {
-
             $found = $this->findNearestVersion($this->version, array_keys($versions));
 
             if ($found === array_keys($versions)[0]) {
                 $age->releaseDateRange = [
                     'start' => [
-                        'date' => null,
-                        'version' => null,
+                        'date'      => null,
+                        'version'   => null,
                         'inclusive' => false,
                     ],
                     'end' => [
-                        'date' => new DateTime($versions[$found]),
-                        'version' => $found,
+                        'date'      => new DateTime($versions[$found]),
+                        'version'   => $found,
                         'inclusive' => $this->version === $this->matchDepth($this->version, $found),
                     ],
                 ];
             } elseif ($found === '') {
                 $age->releaseDateRange = [
                     'start' => [
-                        'date' => new DateTime($versions[array_keys($versions)[count($versions) - 1]]),
-                        'version' => array_keys($versions)[count($versions) - 1],
+                        'date'      => new DateTime($versions[array_keys($versions)[count($versions) - 1]]),
+                        'version'   => array_keys($versions)[count($versions) - 1],
                         'inclusive' => $this->version === $this->matchDepth($this->version, array_keys($versions)[count($versions) - 1]),
                     ],
                     'end' => [
-                        'date' => null,
-                        'version' => null,
+                        'date'      => null,
+                        'version'   => null,
                         'inclusive' => false,
                     ],
                 ];
             } else {
                 $nextFound = $this->findNearestVersion($this->incrementVersion($this->version), array_keys($versions));
+
                 if ($nextFound === $found) {
                     $age->releaseDateRange = [
                         'start' => [
-                            'date' => new DateTime($versions[array_keys($versions)[array_search($found, array_keys($versions)) - 1]]),
-                            'version' => array_keys($versions)[array_search($found, array_keys($versions)) - 1],
+                            'date'      => new DateTime($versions[array_keys($versions)[array_search($found, array_keys($versions)) - 1]]),
+                            'version'   => array_keys($versions)[array_search($found, array_keys($versions)) - 1],
                             'inclusive' => $this->version === $this->matchDepth($this->version, array_keys($versions)[array_search($found, array_keys($versions)) - 1]),
                         ],
                         'end' => [
-                            'date' => new DateTime($versions[$found]),
-                            'version' => $found,
+                            'date'      => new DateTime($versions[$found]),
+                            'version'   => $found,
                             'inclusive' => $this->version === $this->matchDepth($this->version, $found),
                         ],
                     ];
                 } else {
                     $age->releaseDateRange = [
                         'start' => [
-                            'date' => new DateTime($versions[$found]),
-                            'version' => $found,
+                            'date'      => new DateTime($versions[$found]),
+                            'version'   => $found,
                             'inclusive' => $this->version === $this->matchDepth($this->version, $found),
                         ],
                         'end' => [
-                            'date' => !empty($nextfound) ? new DateTime($versions[$nextFound]) : null,
-                            'version' => !empty($nextfound) ? $nextFound : null,
-                            'inclusive' => !empty($nextfound) ?  ($this->version === $this->matchDepth($this->version, $nextFound)) : null,
+                            'date'      => !empty($nextFound) ? new DateTime($versions[$nextFound]) : null,
+                            'version'   => !empty($nextFound) ? $nextFound : null,
+                            'inclusive' => !empty($nextFound) ?  ($this->version === $this->matchDepth($this->version, $nextFound)) : null,
                         ],
                     ];
                 }
@@ -138,7 +138,7 @@ class Browser
                         foreach ($versions as $version => $releaseDate) {
                             if (isset($usedVersions[$version])) {
                                 $existing = DateTime::createFromFormat('Y-m-d', $usedVersions[$version]);
-                                $new = DateTime::createFromFormat('Y-m-d', $releaseDate);
+                                $new      = DateTime::createFromFormat('Y-m-d', $releaseDate);
 
                                 if ($new <= $existing) {
                                     $usedVersions[$version] = $releaseDate;

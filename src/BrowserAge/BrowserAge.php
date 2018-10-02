@@ -2,12 +2,9 @@
 
 namespace BrowserAge;
 
-use BrowserAge\Browser;
-use BrowserAge\Platform;
-
 class BrowserAge
 {
-    const STABILITY_BETA = 100;
+    const STABILITY_BETA   = 100;
     const STABILITY_STABLE = 200;
 
     protected $minimumStability = self::STABILITY_STABLE;
@@ -158,7 +155,7 @@ class BrowserAge
         }
 
         return [
-            'browser' => $this->browser->calculateAge($this->platform, $this->minimumStability),
+            'browser'  => $this->browser->calculateAge($this->platform, $this->minimumStability),
             'platform' => [],
         ];
     }
