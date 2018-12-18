@@ -14,6 +14,8 @@ class SamsungInternet extends Browser
                 '7.2' => '2018-03-08',
                 // https://medium.com/samsung-internet-dev/samsung-internet-v7-4-beta-is-here-bdbc9be9f102
                 '7.4' => '2018-06-05',
+                // https://medium.com/samsung-internet-dev/hello-samsung-internet-8-2-beta-521e4b215fb3
+                '8.2' => '2018-09-03',
             ],
             BrowserAge::STABILITY_STABLE => [
                 // Based on first sighting in our logs
@@ -46,6 +48,8 @@ class SamsungInternet extends Browser
                 '6.4' => '2018-02-19',
                 // https://medium.com/samsung-internet-dev/7-2-stable-is-here-81fdbfca75b4
                 '7.2' => '2018-06-20',
+                // https://medium.com/samsung-internet-dev/samsung-internet-7-4-is-stable-lets-check-out-what-s-new-d5c7b56897de
+                '7.4' => '2018-09-12',
             ],
         ],
     ];
