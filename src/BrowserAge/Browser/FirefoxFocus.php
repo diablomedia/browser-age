@@ -41,6 +41,12 @@ class FirefoxFocus extends Browser
                 '6.0'    => '2018-07-10',
                 '6.1'    => '2018-07-25',
                 '6.1.1'  => '2018-07-31',
+                '7.0'    => '2018-09-19',
+                '7.0.1'  => '2018-10-02',
+                '7.0.2'  => '2018-10-09',
+                '7.0.3'  => '2018-10-17',
+                '7.0.4'  => '2018-11-08',
+                '8.0'    => '2018-12-18',
             ],
         ],
         'android' => [
@@ -68,20 +74,23 @@ class FirefoxFocus extends Browser
                 '2.5' => '2017-11-27',
                 // https://web.archive.org/web/20180108175925/https://play.google.com/store/apps/details?id=org.mozilla.focus&hl=en
                 '4.0.1' => '2017-12-19',
-                // https://github.com/mozilla-mobile/focus-android/releases/tag/v4.0.2-RC1
-                '4.0.2' => '2018-01-11',
-                // https://github.com/mozilla-mobile/focus-android/releases/tag/V4.1
-                '4.1' => '2018-03-22',
-                // https://github.com/mozilla-mobile/focus-android/releases/tag/v4.2
-                '4.2' => '2018-04-18',
-                // https://github.com/mozilla-mobile/focus-android/releases/tag/v5.0
-                '5.0' => '2018-05-14',
-                // https://github.com/mozilla-mobile/focus-android/releases/tag/v5.2-RC3
-                '5.2' => '2018-06-22',
-                // https://github.com/mozilla-mobile/focus-android/releases/tag/V6.0-RC5
-                '6.0' => '2018-07-05',
-                // https://github.com/mozilla-mobile/focus-android/releases/tag/v6.1.1-RC3
-                '6.1.1' => '2018-08-08',
+                // The following all come from the github release page for this app:
+                // https://github.com/mozilla-mobile/focus-android/releases/
+                // Anything that isn't marked as a "Pre-release" is listed here. If there are multiple RC versions
+                // for a single version, the latest release date is used (assuming the Pre-release tag wasn't applied
+                // to earlier RC versions but should have been)
+                '4.0.2'  => '2018-01-11',
+                '4.1'    => '2018-03-22',
+                '4.2'    => '2018-04-18',
+                '5.0'    => '2018-05-14',
+                '5.2'    => '2018-06-22',
+                '6.0'    => '2018-07-05',
+                '6.1.1'  => '2018-08-08',
+                '7.0'    => '2018-10-01',
+                '7.0.11' => '2018-10-05',
+                '7.0.12' => '2018-10-09',
+                '7.0.13' => '2018-10-29',
+                '8.0'    => '2018-12-18',
             ],
         ],
     ];
