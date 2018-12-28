@@ -7,7 +7,7 @@ class Platform
     protected $version;
     protected $name;
 
-    public function setVersion($version)
+    public function setVersion($version): void
     {
         $this->version = $version;
     }

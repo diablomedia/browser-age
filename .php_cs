@@ -11,6 +11,8 @@ return PhpCsFixer\Config::create()
     ->setRules([
         '@PSR2' => true,
         '@PHP70Migration' => true,
+        '@PHP71Migration' => true,
+        '@PHP71Migration:risky' => true,
         '@PHPUnit60Migration:risky' => true,
         'binary_operator_spaces' => [
             'default' => 'align_single_space_minimal',
