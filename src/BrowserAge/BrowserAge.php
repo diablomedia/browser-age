@@ -4,8 +4,8 @@ namespace BrowserAge;
 
 class BrowserAge
 {
-    const STABILITY_BETA   = 100;
-    const STABILITY_STABLE = 200;
+    public const STABILITY_BETA   = 100;
+    public const STABILITY_STABLE = 200;
 
     protected $minimumStability = self::STABILITY_STABLE;
     protected $browser;
@@ -127,7 +127,7 @@ class BrowserAge
         }
     }
 
-    public function setBrowser(Browser $browser, $version = null)
+    public function setBrowser(Browser $browser, $version = null): void
     {
         $this->browser = $browser;
         if ($version !== null) {
@@ -135,7 +135,7 @@ class BrowserAge
         }
     }
 
-    public function setPlatform(Platform $platform, $version = null)
+    public function setPlatform(Platform $platform, $version = null): void
     {
         $this->platform = $platform;
         if ($version !== null) {
@@ -143,7 +143,7 @@ class BrowserAge
         }
     }
 
-    public function setMinimumStability($stability)
+    public function setMinimumStability($stability): void
     {
         $this->minimumStability = $stability;
     }

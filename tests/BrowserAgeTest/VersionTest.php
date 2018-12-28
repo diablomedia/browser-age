@@ -22,7 +22,7 @@ class VersionTest extends TestCase
     /**
      * @dataProvider dataProviderVersions
      */
-    public function testVersionAging($browser, $platform, $version, $expected)
+    public function testVersionAging($browser, $platform, $version, $expected): void
     {
         $ba = new BrowserAge($browser, $version, $platform);
 

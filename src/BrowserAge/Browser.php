@@ -11,7 +11,7 @@ class Browser
     protected $platform;
     protected $minimumStability = BrowserAge::STABILITY_STABLE;
 
-    public function setVersion($version)
+    public function setVersion($version): void
     {
         $this->version = $version;
     }
